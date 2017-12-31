@@ -36,19 +36,22 @@ body::-webkit-scrollbar-thumb
 }
 .mid-section{
  float: left;
-    width: 80%;
+    width: 51%;
     margin: 5% 0% 0% 20%;
     font-size: 0.85em;
 }
 .left-mid{
     float: left;
     margin: 0% 1%;
-    width: 61%;
+    width: 98%;
 }
 .right-mid{
     float: left;
+    position: fixed;
+    z-index: -1;
+    right: 3%;
     margin: 0% 1%;
-    width: 30%;
+    width: 25%;
 }
 .nav-link{
     float: left;
@@ -61,7 +64,7 @@ body::-webkit-scrollbar-thumb
 }
 .nav-link:hover{
     transition: all 200ms;
-	background-color:#286ad820;
+	background-color:#7dadfd20;
 }
 .others{
 	width: 1.5em;
@@ -70,7 +73,7 @@ body::-webkit-scrollbar-thumb
 
 }
 .active-nav{
-    background-color:#286ad820;
+    background-color:#7dadfd;
 }
 .nav-link .tooltiptext {
     text-align: left;
@@ -88,7 +91,7 @@ body::-webkit-scrollbar-thumb
 
 /* css for top navbar starts here */
 .top-navbar{
-    position: absolute;
+    position: fixed;
     width: 100%;
     float: left;
     background-color: #fff;
@@ -153,7 +156,7 @@ body::-webkit-scrollbar-thumb
 	opacity: 1;
     /* Position the tooltip */
     position: relative;
-    z-index: 0;
+   z-index: 9999;
     width: 100%;
     transition-delay: 700ms;
 }
@@ -167,6 +170,7 @@ body::-webkit-scrollbar-thumb
     transition-property: all;
     transition-duration: 250ms;
     transition-delay: 100ms;
+    
 }
 .dropdown-links{
     float: left;
@@ -256,23 +260,23 @@ body::-webkit-scrollbar-thumb
 }
 .structure-list:hover{
     transition: all 150ms;
-    background-color: #286AD810;
+    background-color: #7dadfd10;
     cursor: pointer;
     border-radius: 0px;
 }
 .attand-mark{
     float: left;
-    background-color: #286AD8;
-    color: #fff;
+    background-color: #7dadfd20;
+    color: #3d3d3d;
     padding: 0.5em 1.5em;
     border-radius: 50px
     
 }
 .test-mark{
-    background-color: #c98137;
+    background-color: #ffa549;
 }
 .visited{
-    background-color: #eee;
+    background-color: #cfd5df;
 }
 .date{
     float: left;
@@ -307,6 +311,7 @@ body::-webkit-scrollbar-thumb
     float: left;
     width: 100%;
     padding: 0em 1%;
+    font-size: 1em;
     font-weight: 400;
     color: #000;
 }
@@ -332,12 +337,12 @@ body::-webkit-scrollbar-thumb
 }
 .barend{
     float: left;
-    background-color: #286ad8;
+    background-color: #7dadfd;
     width: 20%;
     padding: 0.5em 0em;
     margin: 0em;
     text-align: center;
-    color: #fff;
+    color: #3d3d3d;
 }
 .left-corner{
    border-radius: 20px; 
@@ -359,12 +364,12 @@ body::-webkit-scrollbar-thumb
     width: 50%;
     padding: 0.2em 4% 0.2em 0%;
     margin: 0em;
-    background-color: #286AD8;
+    background-color: #7dadfd;
     color: #fff0;
     border-radius: 20px;
 }
 .critical{
-    background-color: #ee3d3d;
+    background-color: #ff8e4f;
 }
 .inactive-bar{
     background-color: #c1c1c1;
@@ -399,18 +404,18 @@ body::-webkit-scrollbar-thumb
 }
 .complete-link{
 	background-color: transparent;
-	color: #286AD8;
+	color: #7dadfd;
 	text-decoration: none;
 }
 .complete{
-	color: #286AD8;
+	color: #7dadfd;
 }
 .submit-button{
 	float: left;
 	width: 22%;
 	text-align: center;
 	border: 0px solid #fff;
-	background-color: #286ad8;
+	background-color: #7dadfd;
     color: #ffffff;
     font-weight: 600;
 
@@ -609,7 +614,7 @@ body::-webkit-scrollbar-thumb
     padding: 1.3em 2%;
     width: 96%;
     margin: 0em;
-    background-color: #286AD8;
+    background-color: #7dadfd;
 }
 
 .modal-content::-webkit-scrollbar-track
@@ -676,12 +681,12 @@ div.tab button {
 
 /* Change background color of buttons on hover */
 div.tab button:hover {
-    background-color: #286AD840;
+    background-color: #7dadfd40;
 }
 
 /* Create an active/current tablink class */
 div.tab button.active {
-    background-color: #286AD8;
+    background-color: #7dadfd;
 }
 
 /* Style the tab content */
@@ -759,12 +764,13 @@ div.tab button.active {
     width: 96%;
     text-align: justify;
     padding: 0em 2%;
-    line-height: 1.3;
+    line-height: 1.8;
     color: #3d3d3d;
+    font-weight: 400;
 }
 .checkpoints{
     float: left;
-    font-weight: 600;
+    font-weight: 500;
     color: #559900;
     padding: 0.5em 2em;
     margin: 0.5em 10%;
@@ -789,7 +795,7 @@ div.tab button.active {
 .input-submit-button{
     float: left;
     width: 20%;
-    background-color: #286ad8;
+    background-color: #7dadfd;
     color: #fff;
     box-shadow: none;
     border: 0px;
@@ -803,7 +809,7 @@ div.tab button.active {
 }
 
 .critical-font{
-    color: #ff2233;
+    color: #ff8e4f;
 }
 
 /* profile page css goes here */
